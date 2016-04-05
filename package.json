@@ -6,6 +6,10 @@
   "directories": {
     "test": "test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theojepsen/tcptracejs"
+  },
   "scripts": {
     "test": "./node_modules/.bin/mocha test/test.js"
   },
@@ -17,7 +21,7 @@
     "connection",
     "network"
   ],
-  "author": "Theo",
+  "author": "theojepsen",
   "license": "GPL",
   "dependencies": {
     "moment": "^2.12.0",
