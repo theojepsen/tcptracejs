@@ -8,7 +8,7 @@ var spawn = require('child_process').spawn;
 function dateStrToSec(str) { // return secs.fracs since epoch
   var unix_ms = +moment(str, "ddd MMM DD HH:mm:ss:.SSSSSS YYYY");
   var unix_s = Math.floor(unix_ms / 1000);
-  var us = parseInt(str.split(/\.|\s/)[4], 10) / 1e6;
+  var us = parseInt(str.split('.')[1].split(' ')[0], 10) / 1e6;
   return unix_s + us;
 }
 

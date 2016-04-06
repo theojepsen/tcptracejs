@@ -3,12 +3,12 @@ var TcpTrace = require('../');
 var expect = require('expect.js');
 
 var cons = {
-'1': { id: 1, complete: false, hosts: [ { ip: '10.4.0.5', port: 56225 }, { ip:  '10.0.0.22', port: 1337 } ],  first_packet: 1459879034.000012,  last_packet: 1459879034.000012 },
-'2': { id: 2, complete: false, hosts: [ { ip: '10.4.0.5', port: 56232 }, { ip: '10.0.0.22', port: 1337 } ], first_packet: 1459879205.000013, last_packet: 1459879205.000013 },
-'3': { id: 3, complete: false, hosts: [ { ip: '10.4.0.5', port: 56234 }, { ip: '10.0.0.22', port: 1337 } ], first_packet: 1459879205.000013, last_packet: 1459879205.000013 },
-'4': { id: 4, complete: false, hosts: [ { ip: '10.0.0.22', port: 1337 }, { ip: '10.4.0.5', port: 56225 } ], first_packet: 1459879274.000013, last_packet: 1459879274.000013 },
-'5': { id: 5, complete: false, hosts: [ { ip: '10.0.0.22', port: 1337 }, { ip: '10.4.0.5', port: 56232 } ], first_packet: 1459879445.000013, last_packet: 1459879445.000013 },
-'6': { id: 6, complete: false, hosts: [ { ip: '10.0.0.22', port: 1337 }, { ip: '10.4.0.5', port: 56234 } ], first_packet: 1459879445.000013, last_packet: 1459879445.000013 }
+'1': { id: 1, complete: false, hosts: [ { ip: '10.4.0.5', port: 56225 }, { ip: '10.0.0.22', port: 1337 } ], first_packet: 1459879034.229887, last_packet: 1459879034.371852 },
+'2': { id: 2, complete: false, hosts: [ { ip: '10.4.0.5', port: 56232 }, { ip: '10.0.0.22', port: 1337 } ], first_packet: 1459879205.307066, last_packet: 1459879205.563829 },
+'3': { id: 3, complete: false, hosts: [ { ip: '10.4.0.5', port: 56234 }, { ip: '10.0.0.22', port: 1337 } ], first_packet: 1459879205.474288, last_packet: 1459879205.91986 },
+'4': { id: 4, complete: false, hosts: [ { ip: '10.0.0.22', port: 1337 }, { ip: '10.4.0.5', port: 56225 } ], first_packet: 1459879274.431514, last_packet: 1459879274.434258 },
+'5': { id: 5, complete: false, hosts: [ { ip: '10.0.0.22', port: 1337 }, { ip: '10.4.0.5', port: 56232 } ], first_packet: 1459879445.572062, last_packet: 1459879445.578562 },
+'6': { id: 6, complete: false, hosts: [ { ip: '10.0.0.22', port: 1337 }, { ip: '10.4.0.5', port: 56234 } ], first_packet: 1459879445.931901, last_packet: 1459879445.93292 },
 };
 
 describe('Different ways of initialization', function () {
